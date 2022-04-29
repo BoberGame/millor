@@ -1,0 +1,127 @@
+// main_file: style.less
+
+.btn {
+	max-width: 400px;
+	min-width: 400px;
+	margin: 0;
+	padding: 22px 56px;
+
+	color: @white;
+	font-size: 3rem;
+	font-weight: 700;
+	font-family: inherit;
+	line-height: 1.2;
+	background: @yellow;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+	transition: background .1s
+	linear;
+
+	&:hover {
+		background: #E2A300;
+	}
+
+	@media @tablet {
+		max-width: 100%;
+		width: 100%;
+
+		font-size: 2.5rem;
+	}
+
+	@media @mobile {
+		max-width: 340px;
+		min-width: 0;
+		padding: 14px 83px;
+		font-size: 1.8rem;
+	}
+
+	&--cat {
+		min-width: 329px;
+		padding: 15px 0;
+
+		text-align: center;
+		font-size: 2.5rem;
+
+		@media @laptop {
+			min-width: 233px;
+			padding: 10px 86px;
+			font-size: 1.8rem;
+		}
+
+		@media @tablet {
+
+			min-width: 380px;
+			padding: 20px 0;
+
+			&:not(.slick-center) {
+				display: none;
+			}
+		}
+
+		@media @mobile {
+			min-width: 0;
+			max-width: 235px;
+			padding: 14px 87px;
+			font-size: 1.8rem;
+		}
+	}
+
+	&--add {
+		padding: 13px 47px;
+		min-height: 48px;
+		min-width: 0;
+
+		font-size: 1.8rem;
+
+		@media @laptop {
+			padding: 9px 33px;
+			min-height: 0;
+			min-width: 125px;
+
+			font-size: 1.2rem;
+		}
+
+		@media @tablet {
+			padding: 10px 35px;
+			max-width: 150px;
+			max-height: 40px;
+
+			font-size: 1.6rem;
+		}
+	}
+
+	&--sub {
+		padding: 25px 53px;
+		min-width: 260px;
+		margin-left: -258px;
+
+		font-size: 2.5rem;
+		border-radius: 40px;
+
+		@media @laptop {
+			min-width: 0;
+			max-width: 179px;
+			margin-left: -175px;
+			padding: 18px 33px;
+
+			font-size: 1.8rem;
+		}
+
+		@media @tablet {
+			max-width: 100%;
+			margin-left: 0;
+			margin-top: 20px;
+
+			font-size: 2.5rem;
+			border-radius: 5px;
+		}
+
+		@media @mobile {
+			padding: 14px 115px;
+			font-size: 1.8rem;
+		}
+	}
+
+}

@@ -1,0 +1,49 @@
+// main_file: style.less
+
+.img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.page {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.img-star {
+	width: 34px;
+	height: 34px;
+
+	fill: @yellow;
+
+	&:last-child {
+		fill: #F0F0F0;
+	}
+
+	@media @laptop {
+		width: 24px;
+		height: 24px;
+	}
+
+	@media @tablet {
+		width: 50px;
+		height: 50px;
+	}
+
+	@media @mobile {
+		width: 25px;
+		height: 25px;
+	}
+
+	& + & {
+		margin-left: 3px;
+	}
+}
