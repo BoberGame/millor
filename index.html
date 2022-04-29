@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Link -->
+	<link rel="stylesheet" href="fonts/gilroy/stylesheet.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Millor</title>
+
+</head>
+<body>
+
+
+	<!-- Sprite -->
+	<div>
+		<svg display="none">
+			<symbol id="product-star" viewBox="0 0 25 23">
+				<path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="degree-icon" viewBox="0 0 20 19">
+				<path d="M0.831238 16.0602C-0.998416 12.8429 0.246618 7.79684 4.03168 4.02143C8.33002 -0.264162 14.2734 -1.28587 17.3079 1.73945C17.3114 1.74341 17.3144 1.7479 17.3193 1.75192C16.712 3.51381 14.778 7.26265 8.98091 9.28945C3.67048 11.1471 1.62197 14.1005 0.831238 16.0602ZM18.1614 2.84081C17.7014 3.91077 16.9009 5.30904 15.5215 6.68435C14.1351 8.06746 12.1645 9.42587 9.37332 10.4022C3.70834 12.3831 2.12554 15.6259 1.68391 17.1974C1.70478 17.2184 1.72272 17.2401 1.743 17.2605C4.77719 20.2859 10.7208 19.2643 15.0188 14.978C18.8433 11.1643 20.0732 6.05278 18.1614 2.84081Z" fill="#505050"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="sphere-icon" viewBox="0 0 10 10">
+				<circle cx="5" cy="5" r="5"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="search-icon" viewBox="0 0 36 35">
+				<path fill="none" d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="cart-icon" viewBox="0 0 37 35">
+				<path fill="none" d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="person-icon" viewBox="0 0 33 36">
+				<path fill="none" d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			</symbol>
+		</svg>
+
+		<svg display="none">
+			<symbol id="arrow-icon" viewBox="0 0 14 12">
+				<path d="M13.5303 6.53033C13.8232 6.23744 13.8232 5.76256 13.5303 5.46967L8.75736 0.696699C8.46447 0.403806 7.98959 0.403806 7.6967 0.696699C7.40381 0.989593 7.40381 1.46447 7.6967 1.75736L11.9393 6L7.6967 10.2426C7.40381 10.5355 7.40381 11.0104 7.6967 11.3033C7.98959 11.5962 8.46447 11.5962 8.75736 11.3033L13.5303 6.53033ZM0 6.75H13V5.25H0V6.75Z"/>
+			</symbol>
+		</svg>
+	</div>
+	
+	<div class="page">
+
+		<img class="header__figure" src="images/figure-1.svg" alt="">
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+
+					<button class="burger" id="burgerBtn" type="button">
+						<span class="burger__item">Menu</span>
+					</button>
+					<img class="header__logo img" src="images/logo.png" alt="">
+
+					<nav class="nav" id="nav">
+						<img class="nav__logo" src="images/logo.png" alt="">
+						<img class="nav__close" id="navClose" src="images/close.svg" alt="">
+						<a class="nav__link" href="#" data-scroll="#catalog">Каталог товаров</a>
+						<a class="nav__link" href="#">Блог</a>
+						<a class="nav__link" href="#">Контакты</a>
+
+						<div class="nav__icons">
+							<button class="nav__cart">
+								<svg class="header-icon">
+									<use href="#cart-icon"></use>
+								</svg>
+							</button>
+							<button class="nav__person">
+								<svg class="header-icon">
+									<use href="#person-icon"></use>
+								</svg>
+							</button>
+						</div>
+
+						<a class="nav__email" href="mailto:Import@kldrefine.com">Import@kldrefine.com</a>
+						
+						<div class="nav__social">
+							<a href="#" target="_blank">
+								<img class="nav__call" src="images/phone-icon.svg" alt="">
+							</a>
+							<a href="https://www.instagram.com" target="_blank">
+								<img class="nav__inst" src="images/social-icon.svg" alt="">
+							</a>
+						</div>
+					</nav>
+
+					<form class="form" id="navSearch" action="/" method="post">
+						<input class="form__input" name="form__input" type="search" placeholder="Поиск по товарам">
+						<a class="form__deny" id="navSearchDeny" href="#">Отменить</a>
+					</form>
+
+					<div class="header__menu">
+						<button class="header__btn header__btn--search" id="navSearchBtn">
+							<svg class="header-icon">
+								<use href="#search-icon"></use>
+							</svg>
+						</button>
+						<button class="header__btn header__btn--cart">
+							<svg class="header-icon">
+								<use href="#cart-icon"></use>
+							</svg>
+						</button>
+						<button class="header__btn">
+							<svg class="header-icon">
+								<use href="#person-icon"></use>
+							</svg>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+
+
+		<!-- Intro -->
+		<div class="intro">
+			<div class="container">
+				<div class="intro__inner">
+					<div class="slider__intro">
+						<div class="slider__item-intro">
+							<h1 class="intro__title">Свежеобжаренный кофе</h1>
+							<div class="intro__text">
+								<p>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+								<p>Мы обжариваем кофе <b>каждые выходные.</b></p>
+							</div>
+							<a class="btn" href="../catalog/catalog.html" target="_blank">Посмотреть каталог</a>
+						</div>
+						<div class="slider__item-intro">
+							<h1 class="intro__title">Свежеизготовленный кофе</h1>
+							<div class="intro__text">
+								<p>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+								<p>Мы обжариваем кофе <b>каждые выходные.</b></p>
+							</div>
+							<a class="btn" href="../catalog/catalog.html" target="_blank">Посмотреть каталог</a>
+						</div>
+						<div class="slider__item-intro">
+							<h1 class="intro__title">Сублимированный кофе</h1>
+							<div class="intro__text">
+								<p>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+								<p>Мы обжариваем кофе <b>каждые выходные.</b></p>
+							</div>
+							<a class="btn" href="../catalog/catalog.html" target="_blank">Посмотреть каталог</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Catalog -->
+		<section class="catalog">
+			<img class="catalog__bg" src="images/figure-2.svg" alt="">
+
+
+			<div class="catalog__inner" id="catalog">
+
+				<div class="section__header">
+					<h2 class="section__title">Каталоги нашей продукции</h2>
+				</div>
+
+				<div class="slider__catalog">
+
+					<div class="slider__item-cat">
+						<div class="catalog__col">
+							<div class="catalog__item">
+								<div class="catalog__top">
+									<img src="images/catalog/cat-1.png" alt="" class="catalog__img img">
+								</div>
+								<h3 class="catalog__title">Свежеобжаренный кофе</h3>
+								<button class="btn btn--cat">Купить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__item-cat">
+						<div class="catalog__col">
+							<div class="catalog__item">
+								<div class="catalog__top">
+									<img src="images/catalog/cat-2.png" alt="" class="catalog__img img">
+								</div>
+								<h3 class="catalog__title">Чай и кофейные напитки</h3>
+								<button class="btn btn--cat">Купить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__item-cat">
+						<div class="catalog__col">
+							<div class="catalog__item">
+								<div class="catalog__top">
+									<img src="images/catalog/cat-3.png" alt="" class="catalog__img img">
+								</div>
+								<h3 class="catalog__title">Продукция для вендинга</h3>
+								<button class="btn btn--cat" type="button">Купить</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider__item-cat">
+						<div class="catalog__col">
+							<div class="catalog__item">
+								<div class="catalog__top">
+									<img src="images/catalog/cat-3.png" alt="" class="catalog__img img">
+								</div>
+								<h3 class="catalog__title">Чай и кофейные напитки</h3>
+								<button class="btn btn--cat" type="button">Купить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.catalog__inner -->
+		</section><!-- /.catalog -->
+		
+
+
+
+		<!-- Product -->
+		<section class="product">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Товары со скидкой</h2>
+					<div class="section__text">Наша компания предлагает покупать товар со скидкой не только в дни распродаж или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!
+					</div>
+				</div>
+
+				<div class="product__inner">
+					<div class="slider__product">
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+
+							</div><!-- /.product__col -->
+						</div><!-- /.slider__item-product -->
+
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+								
+							</div><!-- /.product__col -->
+						</div><!-- /.slider__item-product -->
+
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+
+							</div><!-- /.product__col -->
+						</div>
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+								
+							</div><!-- /.product__col -->
+						</div>
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+								
+							</div><!-- /.product__col -->
+						</div>
+
+						<div class="slider__item-product">
+							<div class="product__col">
+								<span class="product__percent">%</span>
+								<span class="product__sale">Скидки</span>
+								<form class="form__product" action="/" method="post" name="form__product">
+									<select class="product__select">
+										<option class="product__select-opt" value="250 г.">250 г.</option>
+										<option class="product__select-opt" value="1000 г.">1000 г.</option>
+									</select>
+								</form>
+								<div class="product__about">
+									<div class="product__left">
+										<img class="product__img img" src="images/product/product-img.jpg" alt="">
+									</div>
+									<div class="product__right">
+
+										<div class="product__rating-star">
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+											<svg class="product__img-star">
+												<use href="#product-star"></use>
+											</svg>
+										</div>
+
+										<div class="product__rating">
+											<span class="product__rating-count">4.0</span>
+											<span class="product__rating-review">(32 отзыва)</span>
+										</div>
+
+										<div class="product__degree">
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+											<svg class="product__degree-icon">
+												<use href="#degree-icon"></use>
+											</svg>
+										</div>
+
+										<div class="product__feature">
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Кислинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Горчинка</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="product__feature-item">
+												<h5 class="product__feature-title">Насыщенность</h5>
+												<div class="product__feature-quality">
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+													<svg class="product__feature-icon product__feature-icon--gray">
+														<use href="#sphere-icon"></use>
+													</svg>
+												</div>
+											</div>
+										</div><!-- /.product__feature -->
+									</div><!-- /.product__info-right -->
+								</div><!-- /.product__about -->
+
+								<a class="product__title" href="#">Colombia Supremo</a>
+								<div class="product__descriptions">Свежеобжаренный кофе - описание товара, вкус, аромат</div>
+								<span class="product__old-price">
+									<del>350 ₽</del>
+								</span>
+								<div class="product__footer">
+									<span class="product__new-price">250 ₽</span>
+									<button class="btn btn--add">В корзину</button>
+								</div>
+								
+							</div><!-- /.product__col -->
+						</div>
+					</div><!-- /.slider__product -->
+				</div><!-- /.product__inner -->
+
+				<a href="../catalog/catalog.html" class="product__link">Смотреть все</a>
+			</div><!-- /.container -->
+		</section><!-- /.product -->
+
+
+
+		<!-- Work -->
+		<section class="work">
+			<img class="work__bg" src="images/work/work-bg.svg" alt="">
+			<div class="container">
+
+				<div class="work__header">
+					<h2 class="section__title">Почему стоит работать именно с нами?</h2>
+				</div>
+				<div class="work__inner">
+					<div class="work__col">
+						<img class="work__img img" src="images/work/work-img.png" alt="">
+					</div>
+					<div class="work__col">
+						<div class="work__info">
+							<h3 class="work__title">Всегда свежая обжарка</h3>
+							<div class="work__text">Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</div>
+							<img class="work__icon" src="images/work/work__icon-1.svg" alt="">
+						</div>
+						<div class="work__info">
+							<h3 class="work__title">Лучшие цены на продукцию</h3>
+							<div class="work__text">Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</div>
+							<img class="work__icon" src="images/work/work__icon-2.svg" alt="">
+						</div>
+						<div class="work__info">
+							<h3 class="work__title">Консультации 24/7</h3>
+							<div class="work__text">Наши специалисты готовы всегда помочь и подсказать вам с выбором кофе или другой продукции.</div>
+							<img class="work__icon" src="images/work/work__icon-3.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div><!-- /.container -->
+		</section><!-- /.work -->
+
+
+
+		<!-- About -->
+		<div class="about">
+			<div class="container">
+				<img class="about__bg" src="images/figure-wh.svg" alt="">
+				<div class="about__inner">
+					<div class="section__header">
+						<div class="section__title section__title--white">Как мы обжариваем наш кофе:</div>
+					</div>
+					<div class="about__text">
+						<p>Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы для производства растворимой продукции.</p>
+						<p>Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой подход к каждой партии зерна.</p>
+						<p>Мы раскрываем вкус каждого сорта кофе.</p>
+					</div>
+					<button class="btn" type="button">Перейти в каталог</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- News -->
+		<section class="news">
+			<div class="container">
+				<div class="news__header">
+					<h2 class="section__title">Новости компании</h2>
+					<a class="news__read" href="#">Читать все</a>
+				</div>
+				<div class="news__inner">
+
+					<div class="slider__news">
+
+						<div class="slider__item-news">
+							<!-- Row 1 -->
+							<div class="news__row">
+
+								<div class="news__item">
+									<img class="news__img img" src="images/news-img.png" alt="">
+									<div class="news__col news__col--img">
+										<h3 class="news__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+										<div class="news__text">
+											<p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+											<p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="news__item">
+									<div class="news__col">
+										<h3 class="news__title">Африканский кофе Кения АА</h3>
+										<div class="news__text">
+											<p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="slider__item-news">
+							<!-- Row 2 -->
+							<div class="news__row">
+
+								<div class="news__item news__item--second">
+									<img class="news__img img" src="images/news-img.png" alt="">
+									<div class="news__col news__col--img">
+										<h3 class="news__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+										<div class="news__text">
+											<p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+											<p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="news__item news__item--first">
+									<div class="news__col">
+										<h3 class="news__title">Африканский кофе Кения АА</h3>
+										<div class="news__text">
+											<p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div><!-- /.news__row -->
+						</div>
+
+						<div class="slider__item-news">
+							<!-- Row 1 -->
+							<div class="news__row">
+
+								<div class="news__item">
+									<img class="news__img img" src="images/news-img.png" alt="">
+									<div class="news__col news__col--img">
+										<h3 class="news__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+										<div class="news__text">
+											<p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+											<p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="news__item">
+									<div class="news__col">
+										<h3 class="news__title">Африканский кофе Кения АА</h3>
+										<div class="news__text">
+											<p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="slider__item-news">
+							<!-- Row 2 -->
+							<div class="news__row">
+
+								<div class="news__item news__item--second">
+									<img class="news__img img" src="images/news-img.png" alt="">
+									<div class="news__col news__col--img">
+										<h3 class="news__title">Танзанийский кофе. Откуда он взялся и почему мы его так любим?</h3>
+										<div class="news__text">
+											<p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
+											<p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="news__item news__item--first">
+									<div class="news__col">
+										<h3 class="news__title">Африканский кофе Кения АА</h3>
+										<div class="news__text">
+											<p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
+										</div>
+										<div class="news__more">
+											<a class="news__link" href="#">Подробнее</a>
+											<svg class="news__icon">
+												<use href="#arrow-icon"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+
+							</div><!-- /.news__row -->
+						</div>
+
+					</div><!-- /.slider__news -->
+
+				</div><!-- /.news__inner -->
+			</div><!-- /.container -->
+		</section><!-- /.news -->
+
+
+
+		<!-- Social -->
+		<section class="social">
+			<div class="social__header">
+				<h2 class="section__title">Мы в Instagram</h2>
+				<img class="social__icon" src="images/social-icon.svg" alt="">
+			</div>
+
+			<div class="social__inner">
+				<div class="social__device">
+					<div>
+						<img class="social__iphone-big" src="images/iphone-1.png" alt="">
+					</div>
+					<div >
+						<img class="social__iphone" src="images/iphone-2.png" alt="">
+					</div>
+				</div>
+
+				<div class="slider__social">
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+					<div class="slider__item-soc ">
+						<img src="images/social-item.jpg" alt="">
+					</div>
+
+				</div><!-- /.slider__social -->
+			</div><!-- /.social__inner -->
+		</section><!-- /.social -->
+
+
+
+		<!-- Subscribe -->
+		<section class="subscribe">
+			<div class="container">
+				<div class="section__header">
+					<h2 class="section__title">Подписка на новости и рассылку</h2>
+					<div class="section__text section__text--sub">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</div>
+				</div>
+				<div class="subscribe__inner">
+					<form class="form__subscribe" action="/" method="post">
+						<input class="form__input-sub" name="form__input-sub" type="email" placeholder="Ваш email">
+						<button class="btn btn--sub" type="button">Подписаться</button>
+					</form>
+					
+					<div class="subscribe__agreement">Нажимая на кнопку “Подписаться”, вы принимаете правила <a href="#">пользовательского соглашения</a></div>
+				</div>
+				<img class="subscribe__img img" src="images/coffee-img.png" alt="">
+			</div>
+		</section>
+
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<img class="img" src="images/logo.png" alt="">
+					<nav class="footer__nav">
+						<a class="footer__nav-link" href="#" data-scroll="#catalog">Каталог товаров</a>
+						<a class="footer__nav-link" href="#">Блог</a>
+						<a class="footer__nav-link" href="#">Контакты</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+
+	</div><!-- /.page -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

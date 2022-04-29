@@ -1,0 +1,174 @@
+// main_file: style.less
+
+.catalog {
+	position: relative;
+	margin: 276px auto 90px auto;
+
+	@media @laptop {
+		margin: 200px 0 90px 0;
+	}
+
+	@media @tablet {
+		margin: 60px 0 160px 0;
+	}
+
+	@media @mobile {
+		margin: 0 0 110px 0;
+	}
+
+}
+
+.catalog__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	@media @tablet {
+		top: 300px;
+		left: -200px;
+	}
+
+	@media @mobile {
+		top: 50px;
+		left: -350px;
+	}
+}
+
+.catalog__inner {
+	position: relative;
+	z-index: 2;
+	
+	padding: 0 122px;
+
+	@media @laptop {
+		margin-top: 60px;
+		padding: 0 84px;
+	}
+
+	@media @tablet {
+		padding: 0;
+
+		& .section__title {
+			margin-left: 34px;
+
+			@media @mobile {
+				margin-left: 18px;
+			}
+		}
+	}
+}
+
+.catalog__col {
+	margin: 0 10px;
+	position: relative;
+	height: 100%;
+	max-height: 539px;
+	max-width: 400px;
+	width: 100%;
+
+	background: @white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 30px
+	rgba(146, 146, 146, 0.2);
+	transition: all .2s linear;
+
+	&:hover {
+
+		transform: translateY(-10px);
+
+	}
+
+	@media @laptop {
+		width: 100%;
+		max-width: 280px;
+		max-height: 380px;
+		min-height: 0;
+	}
+
+	@media @tablet {
+		min-width: 340px;
+		width: 100%;
+		min-height: 412px;
+		max-height: 442px;
+
+		box-shadow: 0px 0px 38px
+		rgba(146, 146, 146, 0.2);
+		border-radius: 12px;
+
+		&:hover {
+			transform: translateY(0);
+		}
+	}
+
+	@media @mobile {
+		min-width: 0;
+		max-width: 194px;
+		min-height: 0;
+		max-height: 270px;
+
+		border-radius: 10px;
+	}
+}
+
+.catalog__item {
+	padding: 65px 0 60px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@media @laptop {
+		padding: 50px 0 50px 0;
+	}
+
+	@media @mobile {
+		padding: 0;
+	}
+}
+
+.catalog__img {
+	max-height: 212px;
+	margin-bottom: 85px;
+
+	@media @laptop {
+		max-height: 190px;
+		margin-bottom: 30px;
+	}
+
+	@media @tablet {
+		min-width: 200px;
+		height: 240px;
+	}
+
+	@media @mobile {
+		width: 100%;
+		max-width: 235px;
+		min-height: 0;
+		height: 100%;
+		max-height: 168px;
+	}
+}
+
+.catalog__title {
+	margin-bottom: 50px;
+
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	color: @black;
+
+	@media @laptop {
+		font-size: 1.8rem;
+		margin-bottom: 20px;
+	}
+
+	@media @tablet {
+		font-size: 2.2rem;
+		margin-bottom: 30px;
+	}
+
+	@media @mobile {
+		font-size: 1.8rem;
+	}
+}

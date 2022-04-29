@@ -1,0 +1,160 @@
+// main_file: style.less
+
+.social {
+	padding-top: 85px;
+	padding-left: 122px;
+
+	background: url(../images/social-bg.jpg)
+	center no-repeat;
+	background-size: cover;
+
+	@media @laptop {
+		padding-top: 60px;
+	}
+
+	@media @tablet {
+		padding-left: 34px;
+		position: relative;
+	}
+
+	@media @mobile {
+		padding-left: 20px;
+	}
+}
+
+.social__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+
+	@media @laptop {
+		margin-bottom: 0;
+	}
+
+	@media @tablet{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.social__icon {
+	margin-left: 50px;
+
+	@media @tablet {
+		width: 81px;
+		height: 81px;
+		margin-left: 0;
+		margin-top: 40px;
+	}
+
+	@media @mobile {
+		width: 40px;
+		height: 40px;
+		margin-top: 20px;
+	}
+}
+
+.social__inner {
+	display: flex;
+	padding-bottom: 80px;
+	position: relative;
+
+	@media @laptop {
+		padding-top: 20px;
+	}
+
+	@media @tablet {
+		padding-top: 50px;
+		padding-bottom: 250px;
+	}
+
+	@media @mobile {
+		padding-bottom: 110px;
+		padding-top: 0;
+	}
+}
+
+.social__device {
+	width: 45%;
+	margin-left: -120px;
+	margin-right: 30px;
+	display: flex;
+	position: relative;
+
+	@media @laptop {
+		width: 36%;
+	}
+
+	@media @tablet {
+		margin: 0;
+	}
+}
+
+.social__iphone-big {
+	height: 630px;
+
+	@media @tablet {
+		position: absolute;
+		left: 300px;
+		top: -90px;	
+		z-index: 1;
+
+		height: 750px;
+	}
+}
+
+.social__iphone {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	z-index: 2;
+
+	@media @laptop {
+		height: 500px;
+	}
+
+	@media @tablet {
+		display: none;
+	}
+}
+
+.slider__social {
+	display: flex;
+	margin: 140px -10px -7.5px -10px;
+	min-width: 0;
+
+	@media @laptop {
+		margin-top: 200px;
+	}
+
+	@media @tablet {
+		margin-top: 90px;
+		margin-right: 24px;
+		z-index: 6;
+	}
+}
+
+.slider__item-soc {
+	margin: 7.5px 10px;
+	width: 400px;
+	height: 382px;
+
+	overflow: hidden;
+	border-radius: 10px;
+
+	@media @laptop {
+		max-height: 270px;
+		min-width: 280px;
+	}
+
+	@media @tablet {
+		max-height: 389px;
+		max-width: 340px;
+	}
+
+	@media @mobile {
+		max-height: 183px;
+		max-width: 160px;
+		min-width: 0;
+	}
+}

@@ -1,0 +1,79 @@
+// main_file: style.less
+
+.section {
+	
+}
+
+.section__header {
+}
+
+.section__title {
+	font-size: 5rem;
+	font-weight: 900;
+	color: @black;
+
+	&--white {
+		color: @white;
+	}
+
+	@media @tablet {
+		font-size: 4rem;
+	}
+
+	@media @mobile {
+		font-size: 2rem;
+	}
+
+	// @media @laptop {
+	// 	font-size: 3.5rem;
+	// }
+}
+
+
+.section__text {
+	margin-top: 50px;
+	max-width: 1107px;
+	margin-left: auto;
+
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.3;
+	color: @black;
+
+	@media @laptop {
+		max-width: 800px;
+		margin-top: 40px;
+
+		font-size: 1.8rem;
+	}
+
+	@media @tablet {
+		max-width: 475px;
+		margin-top: 50px;
+
+		font-size: 2rem;
+	}
+
+	@media @mobile {
+		margin-top: 30px;
+		max-width: 290px;
+
+		font-size: 1.4rem;
+	}
+
+	&--sub {
+		margin-left: 0;
+
+		@media @laptop {
+			max-width: 540px;
+		}
+
+		@media @tablet {
+			max-width: 600px;
+		}
+
+		@media @mobile {
+			max-width: 320px;
+		}
+	}
+}

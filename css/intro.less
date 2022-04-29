@@ -1,0 +1,152 @@
+// main_file: style.less
+
+.intro {
+	background: url(../images/coffee-img.png) no-repeat;
+	background-size: 600px;
+	background-position: right 200px top 150px;
+	// position: relative;
+	z-index: 2;
+
+	@media @laptop {
+		background-position: right 80px top 100px;
+		background-size: 500px;
+	}
+
+	@media @tablet {
+		background-position: right 0 top 470px;
+		background-size: 460px;
+	}
+
+	@media @mobile {
+		background-position: right -50px top 310px;
+		background-size: 240px;
+	}
+}
+
+.intro__inner {
+	padding-top: 120px;
+	position: relative;
+
+	@media @laptop {
+		padding-top: 85px;
+	}
+
+	@media @tablet {
+		padding-top: 270px;
+	}
+
+	@media @mobile {
+		padding-top: 130px;
+	}
+}
+
+.intro__title {
+	margin-bottom: 60px;
+
+	font-size: 8rem;
+	font-weight: 900;
+	color: @black;
+
+	@media @laptop {
+		font-size: 5.6rem;
+	}
+
+	@media @tablet {
+		font-size: 5rem;
+		max-width: 472px;
+		margin-bottom: 80px;
+	}
+
+	@media @mobile {
+		margin-bottom: 30px;
+
+		font-size: 3rem;
+	}
+}
+
+.intro__text {
+	max-width: 658px;
+	margin-bottom: 90px;
+
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.3;
+	color: @black;
+
+	@media @laptop {
+		font-size: 1.8rem;
+		margin-bottom: 60px;
+	}
+
+	@media @tablet {
+		font-size: 2rem;
+		margin-bottom: 350px;
+		max-width: 310px;
+	}
+
+	@media @mobile {
+		margin-bottom: 130px;
+		max-width: 220px;
+		
+		font-size: 1.4rem;
+	}
+}
+
+.intro__img {
+
+	// position: absolute;
+	// right: 40px;
+	// top: 200px;
+	// z-index: 3;
+
+	// width: 756px;
+	// height: 521px;
+
+	// transform: rotate(-5deg);
+
+	@media @laptop {
+		width: 535px;
+		transform: rotate(15deg);
+	}
+
+	@media @tablet {
+		width: 490px;
+		top: 200px;
+		right: -70px;
+
+		transform: rotate(-2deg);
+	}
+
+	@media @mobile {
+		display: none;
+	}
+
+	&--cup {
+		right: 10px;
+		transform: none;
+		width: 744px;
+		height: 496px;
+		z-index: 4;
+
+		@media @laptop {
+			width: 525px;
+			height: 350px;
+			top: 300px;
+		}
+
+		@media @tablet {
+			width: 500px;
+			height: 350px;
+			top: 290px;
+			right: -100px;
+		}
+
+		@media @mobile {
+			width: 360px;
+			height: 250px;
+
+			right: -90px;
+			top: 270px;
+		}
+	}
+}
